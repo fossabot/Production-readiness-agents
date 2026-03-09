@@ -1,0 +1,33 @@
+{
+  "name": "production-readiness-crew",
+  "version": "0.1.0",
+  "description": "Production Readiness Crew — multi-agent system using deepagents",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --coverage",
+    "test:unit": "vitest run tests/unit",
+    "test:integration": "vitest run tests/integration",
+    "verify": "npm run typecheck && npm run test",
+    "verify:root": "npm run typecheck && npm run test:unit && npm run test:integration"
+  },
+  "dependencies": {
+    "deepagents": "0.3.2",
+    "langchain": "^1.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/node": "^20.0.0",
+    "vitest": "^1.6.0",
+    "@vitest/coverage-v8": "^1.6.0"
+  }
+}

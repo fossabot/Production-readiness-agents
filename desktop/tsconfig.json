@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": ["ES2022", "DOM"],
+    "strict": true,
+    "exactOptionalPropertyTypes": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "outDir": "out",
+    "rootDir": "..",
+    "baseUrl": ".",
+    "types": ["node"],
+    "paths": {
+      "@electron/*": ["electron/*"],
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["electron/**/*.ts", "src/**/*.ts", "src/**/*.tsx", "../src/**/*.ts"],
+  "exclude": ["node_modules", "out", "dist"]
+}

@@ -1,0 +1,41 @@
+appId: com.production-readiness.desktop
+productName: Production Readiness Desktop
+directories:
+  buildResources: build
+  output: release
+files:
+  - out/**/*
+  - "!node_modules/**/*"
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+  artifactName: "${productName}-${version}-Setup.${ext}"
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+mac:
+  target:
+    - target: dmg
+      arch:
+        - x64
+        - arm64
+  artifactName: "${productName}-${version}.${ext}"
+linux:
+  target:
+    - target: AppImage
+      arch:
+        - x64
+    - target: deb
+      arch:
+        - x64
+  artifactName: "${productName}-${version}.${ext}"
+extraResources:
+  - from: resources/crew-library/
+    to: crew-library/
+    filter:
+      - "**/*"
+asar: true
+asarUnpack:
+  - "out/main/crew-worker*.js"
