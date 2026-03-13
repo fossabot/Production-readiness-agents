@@ -1,4 +1,6 @@
 # speckit-agent-skills
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FCLOCKWORK-TEMPTATION%2FProduction-readiness-agents.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FCLOCKWORK-TEMPTATION%2FProduction-readiness-agents?ref=badge_shield)
+
 
 Agent skills for [Spec Kit](https://github.com/github/spec-kit)
 
@@ -138,3 +140,6 @@ See [AGENTS.md](./AGENTS.md) for repository guidelines and agent-specific rules.
 ## License
 
 See [LICENSE](./LICENSE) for details.
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FCLOCKWORK-TEMPTATION%2FProduction-readiness-agents.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FCLOCKWORK-TEMPTATION%2FProduction-readiness-agents?ref=badge_large)
